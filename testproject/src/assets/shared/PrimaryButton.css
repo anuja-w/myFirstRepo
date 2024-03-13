@@ -1,0 +1,14 @@
+.base-title-btn{
+
+width: 188px;
+height: 60px;
+/* UI Properties */
+background: var(---1365ac) 0% 0% no-repeat padding-box;
+border: 1px solid var(---1365ac);
+background: #1365AC 0% 0% no-repeat padding-box;
+border-radius: 2px;
+opacity: 1;
+color: white;
+font: normal normal 600 18px/24px Open Sans;
+margin-top: 92px;
+}

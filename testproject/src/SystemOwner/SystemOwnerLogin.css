@@ -1,0 +1,118 @@
+
+
+body{
+    background-image:url(../assets/SystemOwnerLoginBackground.png);
+ 
+}
+
+.LoginContainer{
+    width: 590px;
+    border-radius: 2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.LoginInside{
+    margin: 4rem;
+}
+
+
+
+.clear{
+    display: none !important;
+}
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  @media (min-width: 600px) {
+    body {
+      padding: 40px;
+    }
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-top: 30px; 
+    margin-inline: auto;
+  
+  }
+  
+  .input {
+    font-size: 16px;
+    width: 100%;
+    padding: 18px 0;
+    padding-right: 30px;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: border-color 250ms;
+    background-color: transparent;
+    padding-left: 24px;
+    border-radius: 2px;
+    font-weight: 800;
+  
+    &:focus {
+      outline: none;
+      
+    }
+  
+    &::placeholder {
+      color: transparent;
+      
+    }
+    
+   
+    &::-webkit-contacts-auto-fill-button {
+      visibility: hidden;
+      pointer-events: none;
+      position: absolute;
+    }
+  }
+
+  .input-wrapper>.input:focus, .input-wrapper>.input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+  
+  .label {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    color: #43454e;
+    pointer-events: none;
+    transform-origin: left center;
+    transition: transform 250ms;
+ 
+  }
+  
+  .input:focus + .label,
+  .input:not(:placeholder-shown) + .label {
+    transform: translateY(-60%) scale(0.75);
+  }
+  
+
+  
+  .input:placeholder-shown + .label + .clear {
+    display: none;
+  }
+
+  .anchor{
+    color: #0775D1;
+    margin-top: 40px;
+    display: block;
+  }
+
+  .LoginInside{
+    text-align: center;
+  }
+  
